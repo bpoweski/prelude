@@ -3,6 +3,10 @@
 ;;;
 ;;; Code:
 
+<<<<<<< HEAD
+=======
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+>>>>>>> bpoweski.el
 (setq mac-command-modifier 'super)
 (setq mac-option-modifier 'meta)
 
@@ -67,6 +71,10 @@
 (setq-default flycheck-disabled-checkers '(r-lintr))
 (setq ess-swv-weave "knitr")
 
+<<<<<<< HEAD
+=======
+(add-hook 'ess-R-post-run-hook 'ess-execute-screen-options)
+>>>>>>> bpoweski.el
 
 ;; YAS
 ;; (prelude-require-package 'yasnippet)
@@ -106,6 +114,10 @@
      (define-clojure-indent
        (fact 'defun)
        (facts 'defun)
+<<<<<<< HEAD
+=======
+       (with-kryo 'defun)
+>>>>>>> bpoweski.el
        (pform 'defun)
        (domonad 'defun)
        (against-background 'defun)
@@ -118,6 +130,10 @@
        (render 'defun)
        (did-mount 'defun)
        (letfn     '(1 ((:defn)) :form))
+<<<<<<< HEAD
+=======
+       (deftype   '(2 nil nil (:defn)))
+>>>>>>> bpoweski.el
        (defroutes 'defun)
        (GET 2)
        (POST 2)
@@ -129,7 +145,13 @@
        (PATCH 2)
        (rfn 2)
        (let-routes 1)
+<<<<<<< HEAD
        (context 2))
+=======
+       (context 2)
+       (with-precision :defn)
+       (as-> 2))
+>>>>>>> bpoweski.el
      (put-clojure-indent '-> nil)
      (put-clojure-indent '->> nil)
      (electric-indent-mode -1)
